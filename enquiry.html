@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Enquiry | Glow Beauty Salon</title>
+    <meta name="description" content="Enquire about beauty services and prices at Glow Beauty Salon.">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5e6ff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: purple;
+        }
+
+        form {
+            background-color: white;
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: purple;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        #response {
+            color: green;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+    <a href="Home.HTML">Home</a> |
+    <a href="About Us.HTML">About Us</a> |
+    <a href="Services.HTML">Services</a> |
+    <a href="Gallery.HTML">Gallery</a> |
+    <a href="Contact Us.HTML">Contact Us</a>
+</nav>
+
+    <h1>GLOW BEAUTY SALON</h1>
+    <h2>Beauty Service Enquiry</h2>
+
+    <form id="enquiryForm">
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name"
+               minlength="2" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone"
+               pattern="[0-9]{10}"
+               title="Enter a 10-digit phone number" required>
+
+        <label for="service">Choose a Beauty Service:</label>
+        <select id="service" name="service" required>
+            <option value="">Select a service</option>
+            <option value="Hair Styling">Hair Styling</option>
+            <option value="Nails">Nails</option>
+            <option value="Makeup">Makeup</option>
+            <option value="Basic Facial">Basic Facial - R120</option>
+            <option value="Deep Clean Facial">Deep Clean Facial - R180</option>
+            <option value="Glow Facial">Glow Facial - R250</option>
+        </select>
+
+        <label for="message">Your Enquiry:</label>
+        <textarea id="message" name="message"
+                  rows="4" minlength="5" required></textarea>
+
+        <button type="submit">Submit Enquiry</button>
+
+        <p id="response" aria-live="polite"></p>
+
+    </form>
+<a href="Home.HTML">Back to Home</a>
+<a href="https://wa.me/27726918115" target="_blank" class="whatsapp-button">
+    Chat with Us on WhatsApp
+</a>
+    <script>
+        document.getElementById("enquiryForrm")
+ .addEventListener("submit", function(event) {
+ event.preventDefault();
+
+                const name = document.getElementById("name").value.trim();
+                const service = document.getElementById("service").value;
+
+                document.getElementById("response").textContent =
+                    "Thank you, " + name +
+                    "! Your enquiry about " + service +
+                    " has been received. We will contact you soon.";
+            });
+    </script>
+
+</body>
+</html>

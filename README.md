@@ -94,3 +94,55 @@ The Contact Us page provides contact information for customers.
 # Author
 
 Glow Beauty Salon
+
+
+/* Mobile Responsive Design */
+@media screen and (max-width: 600px) {
+
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto !important;
+    }
+
+    header img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    table {
+        display: block;
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+    input, textarea, select, button {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+}

@@ -7,7 +7,8 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Glow Beauty Salon - Home</title>
-    <link rel="stylesheet" href="CSS/style.css"
+    <meta name="description" content="Visit Glow Beauty Salon for professional hair styling, nail treatments, makeup and facials. Explore our beauty services and prices, and book your appointment today."><meta name="keywords" content="Glow Beauty Salon, beauty salon, hair styling, nail treatments, makeup, facials, beauty services"><meta name="author" content="Glow Beauty Salon"><meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
@@ -21,7 +22,7 @@
         <a href="About Us.HTML">About Us</a>
         <a href="Services.HTML">Services</a>
         <a href="Gallery.HTML">Gallery</a>
-        <a href="Contact.HTML">Contact Us</a>
+        <a href="Contact Us.HTML">Contact Us</a>
     </nav>
 
 </header>
@@ -43,10 +44,76 @@
     <p> At Glow Beauty Salon we offer hair styling, nails, makeup,
         eyelashes and facial treatments.
     </p>
+<!-- Customer Reviews Section --><section id="reviews">
+    <h2>Customer Reviews</h2>
+    <p>See what our customers say about Glow Beauty Salon!</p><div class="review">
+    <h3>Customer 1</h3>
+    <p>★★★★★</p>
+    <p>"The service was amazing, and my nails looked beautiful!"</p>
+</div>
 
+<div class="review">
+    <h3>Customer 2</h3>
+    <p>★★★★★</p>
+    <p>"The staff were friendly, and I loved my facial treatment."</p>
+</div>
+
+<div class="review">
+    <h3>Customer 3</h3>
+    <p>★★★★★</p>
+    <p>"A wonderful beauty salon. I will definitely come back!"</p>
+</div>
+
+<div class="leave-review">
+    <h3>Share Your Experience!</h3>
+    <p>We would love to hear your feedback.</p>
+    <a href="Contact Us.HTML" class="review-button">Leave a Review</a>
+</div>
+
+</section>
+<button id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+    Back to Top ↑
+</button>
+
+
+<div style="text-align:center; margin:20px;">
+    <h2>Book Your Beauty Appointment</h2>
+    <p>Ready to look and feel beautiful? Book your appointment today!</p>
+
+    <a href="https://wa.me/27726918115?text=Hello%20Glow%20Beauty%20Salon,%20I%20would%20like%20to%20book%20an%20appointment."
+       target="_blank"
+       style="display:inline-block; background:#25D366; color:white; padding:12px 20px; text-decoration:none; border-radius:8px; font-weight:bold;">
+       Book Now on WhatsApp
+    </a>
+</div>
 </main>
+<section style="background:#fce4ec; padding:25px; text-align:center; margin:20px 0;">
+    <h2>Subscribe to Our Newsletter</h2>
 
-<footer>Glow Beauty Salon &copy;ST10533452</footer>
+    <p>Receive beauty tips, special offers, and salon updates!</p>
+
+    <form onsubmit="subscribeNewsletter(event)">
+        <input
+            type="email"
+            id="newsletterEmail"
+            placeholder="Enter your email address"
+            required
+            style="padding:12px; width:250px; max-width:80%; border:1px solid #ccc; border-radius:5px;"
+        >
+
+        <button
+            type="submit"
+            style="padding:12px 20px; background:#6A1B9A; color:white; border:none; border-radius:5px; cursor:pointer;">
+            Subscribe
+        </button>
+    </form>
+
+    <p id="newsletterMessage"></p>
+</section>
+<footer>Glow Beauty Salon </footer>
+
+</button>
+<script src="JAVASCRIPT/script.js"></script>
 
 </body>
 

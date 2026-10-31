@@ -437,3 +437,306 @@ footer {
     }
 
 }
+/* Interactive Gallery Lightbox */
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+.lightbox img {
+    max-width: 85%;
+    max-height: 75vh;
+    object-fit: contain;
+    margin: auto;
+}
+
+.close-lightbox {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+#lightboxCaption {
+    color: white;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+/* Image Lightbox */
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lightbox img {
+    max-width: 80%;
+    max-height: 75vh;
+    object-fit: contain;
+}
+
+.close-lightbox {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+#lightboxCaption {
+    color: white;
+    font-size: 20px;
+    margin-top: 15px;
+}
+.home-button {
+display: inline-block;
+background-color: purple;
+color: white;
+padding: 12px 20px;
+text-decoration: none;
+border-radius: 5px;
+margin-top: 15px;
+}
+
+.home-button:hover {
+background-color: #d98bd9;
+}
+nav {
+background-color: purple;
+padding: 15px;
+text-align: center;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+margin: 10px;
+font-size: 16px;
+font-weight: bold;
+}
+
+nav a:hover {
+color: pink;
+text-decoration: underline;
+}
+/* Enquiry Form Design */
+
+#enquiryForm {
+max-width: 700px;
+margin: 30px auto;
+padding: 30px;
+background-color: #ffffff;
+border-radius: 15px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+#enquiryForm label {
+display: block;
+margin-top: 15px;
+margin-bottom: 8px;
+font-weight: bold;
+color: purple;
+}
+
+#enquiryForm input,
+#enquiryForm select,
+#enquiryForm textarea {
+width: 100%;
+padding: 12px;
+margin-bottom: 10px;
+border: 1px solid #d8b4e2;
+border-radius: 8px;
+box-sizing: border-box;
+font-size: 16px;
+}
+
+#enquiryForm input:focus,
+#enquiryForm select:focus,
+#enquiryForm textarea:focus {
+outline: none;
+border-color: purple;
+box-shadow: 0 0 5px #d8b4e2;
+}
+
+#enquiryForm button {
+background-color: purple;
+color: white;
+padding: 12px 25px;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+font-size: 16px;
+margin-top: 15px;
+}
+
+#enquiryForm button:hover {
+background-color: #d98bd9;
+}
+
+#response {
+color: darkgreen;
+font-weight: bold;
+margin-top: 20px;
+}
+.whatsapp-button {
+display: inline-block;
+background-color: #25D366;
+color: white;
+padding: 12px 20px;
+text-decoration: none;
+border-radius: 8px;
+margin: 10px;
+font-weight: bold;
+}
+
+.whatsapp-button:hover {
+background-color: #128C7E;
+}
+/* Customer Reviews Section */
+#reviews {
+text-align: center;
+padding: 30px;
+background-color: #fce4ec;
+margin-top: 20px;
+}
+
+#reviews h2 {
+color: #800080;
+}
+
+.review {
+background-color: white;
+padding: 15px;
+margin: 15px auto;
+max-width: 500px;
+border-radius: 10px;
+box-shadow: 0 2px 5px #cccccc;
+}
+
+.review p {
+color: #555555;
+}
+
+.review p:first-of-type {
+color: #ff1493;
+font-size: 20px;
+}
+/* Leave a Review Button */
+.leave-review {
+text-align: center;
+padding: 20px;
+}
+
+.review-button {
+display: inline-block;
+background-color: purple;
+color: white;
+padding: 12px 25px;
+text-decoration: none;
+border-radius: 8px;
+font-weight: bold;
+}
+
+.review-button:hover {
+background-color: #d63384;
+}
+/* Back to Top Button */
+#backToTop {
+display: block;
+margin: 20px auto;
+padding: 12px 25px;
+background-color: purple;
+color: white;
+border: none;
+border-radius: 8px;
+font-size: 16px;
+font-weight: bold;
+cursor: pointer;
+}
+
+#backToTop:hover {
+background-color: #d63384;
+}
+/* Gallery Image Hover Effect */
+main img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+main img:hover {
+    transform: scale(1.05);
+}
+
+/* Mobile Responsive Design */
+@media screen and (max-width: 600px) {
+
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto !important;
+    }
+
+    header img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    table {
+        display: block;
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+    input, textarea, select, button {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+}
