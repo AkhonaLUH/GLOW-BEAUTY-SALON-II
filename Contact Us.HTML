@@ -49,10 +49,47 @@
 
     <p>Sunday: Closed</p>
 
+    <h2>Send Us a Message</h2>
+
+<form id="contactForm">
+
+    <label for="contactName">Full Name:</label>
+    <input type="text" id="contactName" name="name" required>
+
+    <br><br>
+
+    <label for="contactEmail">Email Address:</label>
+    <input type="email" id="contactEmail" name="email" required>
+
+    <br><br>
+
+    <label for="messageType">Type of Message:</label>
+    <select id="messageType" name="messageType" required>
+        <option value="">Select message type</option>
+        <option value="General Enquiry">General Enquiry</option>
+        <option value="Appointment">Appointment</option>
+        <option value="Complaint">Complaint</option>
+        <option value="Compliment">Compliment</option>
+    </select>
+
+    <br><br>
+
+    <label for="contactMessage">Your Message:</label>
+    <textarea id="contactMessage" name="message" rows="5" required></textarea>
+
+    <br><br>
+
+    <button type="submit">Send Message</button>
+
+    <p id="contactResponse"></p>
+
+</form>
+
 </main>
 
 <footer>Glow Beauty Salon & ST10533452</footer>
 
+<script src="JAVASCRIPT/script.js"></script>
 </body>
 
 </html>

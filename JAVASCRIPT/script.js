@@ -138,3 +138,67 @@ function subscribeNewsletter(event) {
 
     document.getElementById("newsletterEmail").value = "";
 }
+
+// Contact Form Functionality using AJAX
+const contactForm = document.getElementById("contactForm");
+
+if (contactForm) {
+    contactForm.addEventListener("submit", async function(event) {
+        event.preventDefault();
+
+        const name = document.getElementById("contactName").value.trim();
+        const email = document.getElementById("contactEmail").value.trim();
+        const messageType = document.getElementById("messageType").value;
+        const message = document.getElementById("contactMessage").value.trim();
+
+        const response = document.getElementById("contactResponse");
+
+        if (!name || !email || !messageType || !message) {
+            response.textContent = "Please complete all fields.";
+            return;
+        }
+
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            response.textContent = "Please enter a valid email address.";
+            return;
+        }
+
+        response.textContent = "Sending your message...";
+
+        try {
+            const result = await fetch(
+                "https://formsubmit.co/ajax/glowbeautysalon@gmail.com",
+                {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Accept": "application/json"
+                    },
+                    body: JSON.stringify({
+                        name: name,
+                        email: email,
+                        messageType: messageType,
+                        message: message,
+                        _subject: "New Glow Beauty Salon Contact Message",
+                        _replyto: email
+                    })
+                }
+            );
+
+            const data = await result.json();
+
+            if (result.ok && data.success) {
+                response.textContent =
+                    "Thank you! Your message has been sent successfully.";
+                contactForm.reset();
+            } else {
+                response.textContent =
+                    "Sorry, your message could not be sent. Please try again.";
+            }
+
+        } catch (error) {
+            response.textContent =
+                "There was a connection problem. Please try again.";
+        }
+    });
+}

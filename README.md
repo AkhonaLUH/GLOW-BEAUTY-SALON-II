@@ -93,56 +93,53 @@ The Contact Us page provides contact information for customers.
 
 # Author
 
-Glow Beauty Salon
+Part 3 – JavaScript Functionality, SEO and Website Improvements
 
+For Part 3, the Glow Beauty Salon website was improved by adding JavaScript features, search engine optimisation and better mobile responsiveness.
 
-/* Mobile Responsive Design */
-@media screen and (max-width: 600px) {
+JavaScript Features
 
-    body {
-        width: 100%;
-        margin: 0;
-        padding: 10px;
-        box-sizing: border-box;
-    }
+- Added a gallery lightbox to enlarge images.
+- Added image hover effects.
+- Added a search function to filter beauty services.
+- Added form validation for enquiry and contact forms.
+- Added a newsletter subscription message.
+- Added interactive WhatsApp booking functionality.
+- Added a back-to-top button.
 
-    img {
-        max-width: 100%;
-        height: auto !important;
-    }
+Search Engine Optimisation (SEO)
 
-    header img {
-        max-width: 100%;
-        height: auto;
-    }
+- Added SEO meta descriptions and keywords to the website pages.
+- Added alternative text (alt text) to gallery images.
+- Created a robots.txt file.
+- Created a sitemap.xml file.
 
-    nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+Forms and User Interaction
 
-    nav a {
-        padding: 10px;
-        font-size: 14px;
-    }
+- Added an enquiry form.
+- Improved contact form validation.
+- Added a customer review section.
+- Added a WhatsApp booking link.
 
-    table {
-        display: block;
-        max-width: 100%;
-        overflow-x: auto;
-    }
+Mobile Responsiveness
 
-    input, textarea, select, button {
-        max-width: 100%;
-        box-sizing: border-box;
-    }
+- Added CSS media queries for smaller screens.
+- Improved navigation and image display on mobile devices.
+- Tested the website using Chrome Developer Tools.
 
-    h1 {
-        font-size: 25px;
-    }
+Testing
 
-    h2 {
-        font-size: 21px;
-    }
-}
+The following features were tested:
+
+- Navigation links.
+- Service search functionality.
+- Gallery lightbox.
+- Enquiry form validation.
+- Contact form validation.
+- WhatsApp booking button.
+- Newsletter subscription message.
+- Mobile screen display.
+
+Conclusion
+
+Part 3 improved the Glow Beauty Salon website by making it more interactive, user-friendly and accessible on different screen sizes. SEO improvements were also added to help search engines understand the website.
