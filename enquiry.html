@@ -92,7 +92,9 @@
             <option value="Basic Facial">Basic Facial - R120</option>
             <option value="Deep Clean Facial">Deep Clean Facial - R180</option>
             <option value="Glow Facial">Glow Facial - R250</option>
+
         </select>
+      <p id="servicePrice"></p>
 
         <label for="message">Your Enquiry:</label>
         <textarea id="message" name="message"
@@ -108,6 +110,21 @@
     Chat with Us on WhatsApp
 </a>
     <script>
+      const service = document.getElementById("service");
+const servicePrice = document.getElementById("servicePrice");
+
+service.addEventListener("change", function() {
+    const prices = {
+        "Hair Styling": "From R100 to R200",
+        "Nails": "From R80 to R180",
+        "Makeup": "From R150 to R300",
+        "Basic Facial": "R120",
+        "Deep Clean Facial": "R180",
+        "Glow Facial": "R250"
+    };
+
+    servicePrice.textContent = prices[service.value] || "";
+});  
         document.getElementById("enquiryForrm")
  .addEventListener("submit", function(event) {
  event.preventDefault();
